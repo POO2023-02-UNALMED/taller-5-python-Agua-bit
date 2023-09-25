@@ -9,4 +9,4 @@ class Zona():
         animales += 1
 
     def cantidadAnimales():
-        return animales
+        return 
