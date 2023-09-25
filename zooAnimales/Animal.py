@@ -1,3 +1,4 @@
+
 class Animal():
 
     def __init__(self, totalAnimales = int, nombres = str, edad = int, habitat = str, genero = str, zona = list):
