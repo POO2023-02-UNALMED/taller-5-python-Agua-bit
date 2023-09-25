@@ -1,9 +1,9 @@
-from animal import Animal
+from zooAnimales.animal import Animal
+
 
 class Reptil(Animal):
-
-    def __init__(self, listado=[], iguanas=int, serpientes=int, colorEscamas=str, largoCola=int):
-        self.listado = listado
+    listado = []
+    def __init__(self, iguanas=int, serpientes=int, colorEscamas=str, largoCola=int):
         self.iguanas = iguanas
         self.serpientes = serpientes
         self.colorEscamas = colorEscamas
@@ -11,12 +11,12 @@ class Reptil(Animal):
 
     def cantidadReptiles(self):
         return
-    
-    def movimiento():
+
+    def movimiento(self):
         return
-    
-    def crearIguana():
+
+    def crearIguana(self):
         return
-    
-    def crearSerpiente():
+
+    def crearSerpiente(self):
         return
