@@ -9,7 +9,8 @@ class Animal():
         self.zona = zona
 
     def movimiento(self):
-
+        return
+    
     def totalPorTipo():
         print("Mamiferos: #")
         print("Aves: #")

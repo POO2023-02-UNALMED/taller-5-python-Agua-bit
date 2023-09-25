@@ -8,4 +8,14 @@ class Ave(Animal):
         self.aguilas = aguilas
         self.colorPlumas = colorPlumas
 
-        
+    def cantidadAveso():
+        return
+    
+    def movimiento():
+        return
+    
+    def crearHalcon():
+        return 
+    
+    def crearAguila():
+        return
