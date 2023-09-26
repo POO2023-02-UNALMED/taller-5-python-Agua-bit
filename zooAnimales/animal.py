@@ -14,11 +14,10 @@ class Animal:
     def movimiento(self):
         return
     
+    @staticmethod
     def totalPorTipo():
-        print("Mamiferos: #")
-        print("Aves: #")
-        print("Reptiles: #")
-        print("Peces: #")
+        return "Mamiferos: " + str(zooAnimales.mamifero.Mamifero.cantidadMamiferos) + "\n" "Aves : " + str(zooAnimales.ave.Ave.cantidadAves) + "\n" "Reptiles: " + str(zooAnimales.reptil.Reptiles.cantidadReptiles) + "\n" "Peces: " + str(zooAnimales.pez.Pez.cantidadPeces) + "\n" "Anfibios: " + str(zooAnimales.anfibio.Anfibio.cantidadAnfibios)
+    
         print("Anfibios: #")
     
     def toString():
