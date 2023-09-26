@@ -1,4 +1,4 @@
-
+import zooAnimales
 
 class Animal:
 
@@ -47,3 +47,13 @@ class Animal:
     
     def setGenero(self, _genero):
         self._genero = _genero
+
+    @classmethod
+    def getTotalAnimales(cls):
+        return cls._totalAnimales
+    
+    @classmethod
+    def setTotalAnimales(cls, _totalAnimales):
+        cls._totalAnimales = _totalAnimales
+
+    
