@@ -39,7 +39,7 @@ class Animal:
     def getHabitat(self):
         return self._habitat
 
-    def getHabitat(self, _habitat):
+    def setHabitat(self, _habitat):
         self._habitat = _habitat
 
     def getGenero(self):
