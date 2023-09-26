@@ -2,8 +2,10 @@
 
 class Animal:
 
-    def __init__(self, totalAnimales = int, nombre = str, edad = int, habitat = str, genero = str, zona = list):
-        self.totalAnimales = totalAnimales
+    _totalAnimales = 0
+    _zona= ""
+    def __init__(self,  nombre = str, edad = int, habitat = str, genero = str):
+        Animal._totalAnimales += 1 
         self._nombre = nombre
         self._edad = edad
         self._habitat = habitat
@@ -28,3 +30,21 @@ class Animal:
     
     def setNombre(self, _nombre):
         self._nombre = _nombre
+
+    def getEdad(self):
+        return self._edad
+    
+    def setEdad(self, _edad):
+        self._edad = _edad
+
+    def getHabitat(self):
+        return self._habitat
+
+    def getHabitat(self, _habitat):
+        self._habitat = _habitat
+
+    def getGenero(self):
+        return self._genero
+    
+    def setGenero(self, _genero):
+        self._genero = _genero
