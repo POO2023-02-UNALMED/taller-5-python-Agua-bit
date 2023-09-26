@@ -10,7 +10,6 @@ class Animal:
         self._edad = edad
         self._habitat = habitat
         self._genero = genero
-        self._zona = zona
 
     def movimiento(self):
         return
