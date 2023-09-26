@@ -2,10 +2,15 @@ from zooAnimales.animal import Animal
 
 
 class Reptil(Animal):
-    listado = []
-    def __init__(self, iguanas=int, serpientes=int, colorEscamas=str, largoCola=int):
-        self.iguanas = iguanas
-        self.serpientes = serpientes
+    
+    _listado = []
+    iguanas = 0
+    serpientes = 0
+    def __init__(self, nombre=str, edad=int,habitat=str, genero=str, colorEscamas=str, largoCola=int):
+        self._nombre = nombre
+        self._edad = edad
+        self._habitat = habitat
+        self._genero = genero
         self.colorEscamas = colorEscamas
         self.largoCola = largoCola
 
