@@ -15,8 +15,8 @@ class Animal:
         return
     
     @staticmethod
-    def totalPorTipo():
-        return "Mamiferos : " + str(zooAnimales.mamifero.Mamifero.cantidadMamiferos()) + "\nAves : " + str(zooAnimales.ave.Ave.cantidadAves()) + "\nReptiles : " + str(zooAnimales.reptil.Reptil.cantidadReptiles()) + "\nPeces : " + str(zooAnimales.pez.Pez.cantidadPeces()) + "\nAnfibios : " + str(zooAnimales.anfibio.Anfibio.cantidadAnfibios())
+    def totalPorTipo(cls):
+        return "Mamiferos : " + str(zooAnimales.mamifero.Mamifero.cantidadMamiferos(cls)) + "\nAves : " + str(zooAnimales.ave.Ave.cantidadAves(cls)) + "\nReptiles : " + str(zooAnimales.reptil.Reptil.cantidadReptiles(cls)) + "\nPeces : " + str(zooAnimales.pez.Pez.cantidadPeces(cls)) + "\nAnfibios : " + str(zooAnimales.anfibio.Anfibio.cantidadAnfibios(cls))
     
     def toString(self):
         if self._zona =="":
