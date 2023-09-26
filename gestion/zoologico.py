@@ -1,15 +1,16 @@
 
 
 class Zoologico():
-
+    
+    _zonas= []
     def __init__(self, nombre, ubicacion, zonas):
         self.nombre = nombre
         self.ubicacion = ubicacion
         self.zonas = zonas
 
-    def agregarZonas():
-        zonas += 1
+    def agregarZonas(self, zona):
+        self._zonas.append(zona)
 
 
-    def cantidadTotalAnimales():
+    def cantidadTotalAnimales(self):
         return
