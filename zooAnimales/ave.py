@@ -6,9 +6,7 @@ class Ave(Animal):
     halcones = 0
     aguilas = 0
     def __init__(self, nombre=str, edad=int,habitat=str, genero=str, colorPlumas=str):
-        self._nombre = nombre
-        self._edad = edad
-        self._habitat = habitat
+        super().__init__(nombre, edad,habitat, genero)
         self._genero = genero
         self.colorPlumas = colorPlumas
 

@@ -6,9 +6,7 @@ class Anfibio(Animal):
     ranas = 0
     salamandras = 0
     def __init__(self, nombre=str, edad=int,habitat=str, genero=str, colorPiel=str, venenoso=bool):
-        self._nombre = nombre
-        self._edad = edad
-        self._habitat = habitat
+        super().__init__(nombre, edad,habitat, genero)
         self._genero = genero
         self._colorPiel = colorPiel
         self._venenoso = venenoso
@@ -24,3 +22,6 @@ class Anfibio(Animal):
     
     def crearSalamandra():
         return
+    
+    
+    
