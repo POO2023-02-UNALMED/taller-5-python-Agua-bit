@@ -12,7 +12,7 @@ class Anfibio(Animal):
         self._venenoso = venenoso
 
     @staticmethod 
-    def cantidadAnfibios():
+    def cantidadAnfibios(cls):
         return len(Anfibio._listado)
     
     def movimiento():

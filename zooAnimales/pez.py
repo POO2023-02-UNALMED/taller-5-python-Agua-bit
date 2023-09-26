@@ -12,7 +12,7 @@ class Pez(Animal):
         self._cantidadAletas = cantidadAletas
 
     @staticmethod
-    def cantidadPeces():
+    def cantidadPeces(cls):
         return len(Pez._listado)
     
     def movimiento():

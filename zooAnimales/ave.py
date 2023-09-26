@@ -11,7 +11,7 @@ class Ave(Animal):
         self._colorPlumas = colorPlumas
 
     @staticmethod
-    def cantidadAves():
+    def cantidadAves(cls):
         return len(Ave._listado)
     
     def movimiento():
