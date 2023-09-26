@@ -15,11 +15,17 @@ class Mamifero(Animal):
     def cantidadMamiferos():
         return len(Mamifero._listado)
     
-    def crearCaballo():
-        return
-    
-    def crearLeon():
-        return
+    @classmethod
+    def crearCaballo(cls, nombre=str, edad=int, genero=str):
+        cab = cls(nombre, edad, "pradera", genero, True, 4)
+        Mamifero.caballos += 1
+        return cab
+
+    @classmethod
+    def crearLeon(cls, nombre=str, edad=int, genero=str):
+        Mamifero.leones += 1
+        le = cls(nombre, edad, "selva", genero, True, 4)
+        return le
     
     def isPelaje(self):
         return self._pelaje

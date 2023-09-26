@@ -17,11 +17,16 @@ class Ave(Animal):
     def movimiento():
         return
     
-    def crearHalcon():
-        return 
+    @classmethod
+    def crearHalcon(cls, nombre=str, edad=int, genero=str):
+        Ave.halcones += 1
+        halc = cls(nombre, edad, "montanas", genero, "cafe glorioso")
+        return halc
     
-    def crearAguila():
-        return
+    @classmethod
+    def crearAguila(cls, nombre=str, edad=int, genero=str):
+        Ave.aguilas += 1
+        agui = cls(nombre, edad, "montanas", genero, "blanco y amarillo")
     
     def getColorPlumas(self):
         return self._colorPlumas

@@ -18,12 +18,18 @@ class Pez(Animal):
     def movimiento():
         return
     
-    def crearIguana():
-        return
+    @classmethod
+    def crearSalmon(cls, nombre=str, edad=int, genero=str):
+        Pez.salmones += 1
+        salmon = cls(nombre, edad, "oceano", genero, "rojo", 6)
+        return salmon
     
-    def crearSerpiente():
-        return
-    
+    @classmethod
+    def crearBacalao(cls, nombre=str, edad=int, genero=str):
+        Pez.bacalaos += 1
+        bacalao = cls(nombre, edad, "oceano", genero, "gris", 6)
+        return bacalao
+
     def getColorEscamas(self):
         return self._colorEscamas
     

@@ -18,11 +18,17 @@ class Anfibio(Animal):
     def movimiento():
         return
     
-    def crearRana():
-        return
+    @classmethod
+    def crearRana(cls, nombre=str, edad=int, genero=str):
+        Anfibio.ranas += 1
+        rana =cls(nombre, edad, "selva", genero, "rojo", True)
+        return rana
     
-    def crearSalamandra():
-        return
+    @classmethod
+    def crearSalamandra(cls, nombre=str, edad=int, genero=str):
+        Anfibio.salamandras += 1
+        sal = cls(nombre, edad, "selva", genero, "negro y amarillo", False)
+        return sal
     
     def getColorPiel(self):
         return self._colorPiel
