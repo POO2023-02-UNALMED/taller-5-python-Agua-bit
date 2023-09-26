@@ -8,8 +8,8 @@ class Pez(Animal):
     def __init__(self, nombre=str, edad=int,habitat=str, genero=str, colorEscamas=str, cantidadAletas=int):
         Pez._listado.append(self)
         super().__init__(nombre, edad, habitat, genero)
-        self.colorEscamas = colorEscamas
-        self.cantidadAletas = cantidadAletas
+        self._colorEscamas = colorEscamas
+        self._cantidadAletas = cantidadAletas
 
     def cantidadPeces():
         return len(Pez._listado)
@@ -22,3 +22,15 @@ class Pez(Animal):
     
     def crearSerpiente():
         return
+    
+    def getColorEscamas(self):
+        return self.colorEscamas
+    
+    def setColorEscamas(self, _colorEscamas):
+        self._colorEscamas = _colorEscamas
+
+    def getCantidadAletas(self):
+        return self._cantidadAletas
+    
+    def setCantidadAletas(self, _cantidadAletas):
+        self._cantidadAletas = _cantidadAletas

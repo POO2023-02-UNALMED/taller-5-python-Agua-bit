@@ -8,7 +8,7 @@ class Ave(Animal):
     def __init__(self, nombre=str, edad=int,habitat=str, genero=str, colorPlumas=str):
         Ave._listado.append(self)
         super().__init__(nombre, edad, habitat, genero)
-        self.colorPlumas = colorPlumas
+        self._colorPlumas = colorPlumas
 
     def cantidadAves():
         return len(Ave._listado)
@@ -21,3 +21,9 @@ class Ave(Animal):
     
     def crearAguila():
         return
+    
+    def getColorPlumas(self):
+        return self._colorPlumas
+    
+    def setColorPlumas(self, _colorPlumas):
+        self._colorPlumas = _colorPlumas

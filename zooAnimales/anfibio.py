@@ -23,5 +23,18 @@ class Anfibio(Animal):
     def crearSalamandra():
         return
     
+    def getColorPiel(self):
+        return self._colorPiel
+    
+    def setColorPiel(self, _color):
+        self._colorPiel = _color
+
+    def getVenenoso(self):
+        return self._venenoso
+    
+    def setVenenoso(self, _venenoso):
+        self._venenoso = _venenoso
+    
+
     
     
