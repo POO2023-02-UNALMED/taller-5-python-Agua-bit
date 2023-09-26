@@ -10,6 +10,7 @@ class Ave(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self._colorPlumas = colorPlumas
 
+    @staticmethod
     def cantidadAves():
         return len(Ave._listado)
     

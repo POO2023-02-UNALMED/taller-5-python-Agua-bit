@@ -11,6 +11,7 @@ class Pez(Animal):
         self._colorEscamas = colorEscamas
         self._cantidadAletas = cantidadAletas
 
+    @staticmethod
     def cantidadPeces():
         return len(Pez._listado)
     

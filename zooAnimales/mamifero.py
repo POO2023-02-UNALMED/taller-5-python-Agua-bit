@@ -11,6 +11,7 @@ class Mamifero(Animal):
         self._pelaje = pelaje
         self._patas = patas
 
+    @staticmethod
     def cantidadMamiferos():
         return len(Mamifero._listado)
     
